@@ -1,0 +1,93 @@
+/* Javanese Traditional Fonts */
+
+/* Primary Font - Jawa Palsu for Javanese Style Titles */
+@font-face {
+  font-family: 'Jawa Palsu';
+  src: url('/fonts/JAWAPALSU.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Secondary Font - Belgiano Serif for Elegant Text */
+@font-face {
+  font-family: 'Belgiano';
+  src: url('/fonts/Belgiano-Serif-2.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Javanese Color Palette */
+:root {
+  /* Primary Gold - from reference site */
+  --javanese-gold: #B18B41;
+  --javanese-gold-light: #C9A666;
+  --javanese-gold-dark: #8F6D2E;
+  
+  /* Existing colors - keep for compatibility */
+  --navy: #2A3B6C;
+  --maroon: #5C1F1F;
+  --gold: #D4AF37;
+  --cream: #F4EFE6;
+  
+  /* Javanese specific */
+  --javanese-cream: #F5EFE7;
+  --javanese-brown: #6B4423;
+  --javanese-dark: #2C1810;
+}
+
+/* Typography - Javanese Style */
+.javanese-title {
+  font-family: 'Jawa Palsu', 'Playfair Display', serif;
+  color: var(--javanese-gold);
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.javanese-subtitle {
+  font-family: 'Belgiano', 'Cormorant Garamond', serif;
+  color: var(--javanese-brown);
+  font-weight: 400;
+}
+
+.javanese-body {
+  font-family: 'Belgiano', 'Times New Roman', serif;
+  color: var(--javanese-dark);
+  line-height: 1.8;
+}
+
+/* Ornamental Text Shadow for Javanese Effect */
+.javanese-text-shadow {
+  text-shadow: 
+    2px 2px 4px rgba(0, 0, 0, 0.1),
+    0 0 20px rgba(177, 139, 65, 0.2);
+}
+
+/* Gold Text Gradient - Javanese Style */
+.javanese-gold-gradient {
+  background: linear-gradient(135deg, #B18B41 0%, #D4AF37 50%, #C9A666 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Decorative Border - Javanese Pattern */
+.javanese-border {
+  border: 2px solid var(--javanese-gold);
+  border-image: repeating-linear-gradient(
+    45deg,
+    var(--javanese-gold),
+    var(--javanese-gold) 10px,
+    transparent 10px,
+    transparent 20px
+  ) 1;
+}
+
+/* Batik Pattern Background */
+.javanese-batik-bg {
+  background-image: 
+    repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(177, 139, 65, 0.03) 10px, rgba(177, 139, 65, 0.03) 20px),
+    repeating-linear-gradient(-45deg, transparent, transparent 10px, rgba(177, 139, 65, 0.03) 10px, rgba(177, 139, 65, 0.03) 20px);
+}

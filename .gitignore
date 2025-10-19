@@ -1,0 +1,32 @@
+# Dependencies
+node_modules/
+
+# Build output
+build/
+dist/
+
+# Vercel
+.vercel/
+
+# Environment files
+.env
+.env.local
+.env.production
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# Playwright
+.playwright-mcp/
+
+# Production cleanup summary (keep in repo for reference)
+# PRODUCTION_CLEANUP_SUMMARY.md
