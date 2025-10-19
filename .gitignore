@@ -30,3 +30,4 @@ npm-debug.log*
 
 # Production cleanup summary (keep in repo for reference)
 # PRODUCTION_CLEANUP_SUMMARY.md
+node_modules
